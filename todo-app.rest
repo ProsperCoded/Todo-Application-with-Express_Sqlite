@@ -1,0 +1,46 @@
+### Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "prosper",
+  "password": "12345"
+}
+
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "prosper",
+  "password": "12345"
+}
+
+### Get all todos
+GET http://localhost:3000/todos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNDQ1OTMxLCJleHAiOjE3MzI1MzIzMzF9.LLS0RZqDT-TLQRQt9MRcU5F-ukXlV-6aXgQZ8Ya5oSU
+
+### Create a todos
+POST http://localhost:3000/todos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNDQ1OTMxLCJleHAiOjE3MzI1MzIzMzF9.LLS0RZqDT-TLQRQt9MRcU5F-ukXlV-6aXgQZ8Ya5oSU
+
+{
+  "task": "Learn Node.js"
+}
+
+### Update a todos
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMyNDQ1OTMxLCJleHAiOjE3MzI1MzIzMzF9.LLS0RZqDT-TLQRQt9MRcU5F-ukXlV-6aXgQZ8Ya5oSU
+
+{
+  "completed":1
+}
+
+### Delete a todo
+DELETE http://localhost:3000/todos/1
+Content-Type: application/json
+Authorization:
